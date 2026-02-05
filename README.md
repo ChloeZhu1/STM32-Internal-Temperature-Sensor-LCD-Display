@@ -50,9 +50,9 @@ A 12-bit ADC value (0–4095) is read periodically.
 The ADC value is converted to sensor voltage assuming a 3.3 V reference.
 4. Temperature Calculation
 Temperature is computed using the STM32 datasheet linear approximation:<br>
-$T(°C) = \frac{V_25 - V_sense}{AvgSlope}+25$<br>
+$T(°C) = \frac{V_{25} - V_sense}{AvgSlope}+25$<br>
 where:
-* $V_25 \approx 1.43V $
+* $V_{25} \approx 1.43V $
 * $AvgSlope \approx 4.3mV/°C$
 5. Display Output
 The temperature is formatted and displayed on the LCD in real time.
